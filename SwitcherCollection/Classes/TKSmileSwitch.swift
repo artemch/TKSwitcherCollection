@@ -41,7 +41,7 @@ class TKSmileSwitch:  TKBaseSwitch{
     }
     
     override func drawRect(rect: CGRect) {
-        let ctx = UIGraphicsGetCurrentContext()
+        let ctx = UIGraphicsGetCurrentContext()!
         let lineWidth = 10 * sizeScale
         let path = UIBezierPath(roundedRect: CGRectInset(rect, lineWidth, lineWidth), cornerRadius: rect.width/2)
         CGContextSetLineWidth(ctx, lineWidth*2)
